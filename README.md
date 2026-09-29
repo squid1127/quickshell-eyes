@@ -30,3 +30,12 @@ qs ipc call display getDpms
 ```
 
 The `dpmsRead` signal emits `true` when DPMS is on and `false` when it is off. DPMS control requires Quickshell's Lua-backed Hyprland integration.
+
+## Quick installation
+
+1. Install `quickshell`
+2. Clone the project into `~/.config/quickshell`
+3. Add `qs -c quickshell-eyes` as a startup command in your compositor
+4. Replace your on timeout trigger in `hypridle` or similar with `qs -c quickshell-eyes ipc call display close`
+
+Or do whatever you want lol
